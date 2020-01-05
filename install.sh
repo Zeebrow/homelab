@@ -24,7 +24,6 @@ if [ `grep "profile ${AWS_PROFILE_NAME}" ~/.aws/config` ] && [ $? -ne 0 ]; then
         { exit 1; }
 fi
 
-sudo touch asdf.txt
 # Install awscli via pip3 
 #if [ `which aws &>/dev/null` && $? -ne 0 ] 
 # pip3 install awscli --upgrade --user
